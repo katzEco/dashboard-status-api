@@ -11,4 +11,8 @@ export async function Routes(app: Express) {
   app.get('/status', async (req: Request, res: Response) => {
     res.send(await StatusPage())
   })
+
+  app.get('/*', async (req: Request, res: Response) => {
+    res.send(await HomePage())
+  })
 }
