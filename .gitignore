@@ -3,3 +3,5 @@
 .DS_Store
 yarn.lock
 .env
+dist
+dist_pkg
